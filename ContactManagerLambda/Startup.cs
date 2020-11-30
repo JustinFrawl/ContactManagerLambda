@@ -35,9 +35,9 @@ namespace ContactManagerLambda
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
 
-            Environment.SetEnvironmentVariable("AWS_ACCESS_KEY_ID", Configuration["AWS:AccessKey"]);
-            Environment.SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", Configuration["AWS: SecretKey"]);
-            Environment.SetEnvironmentVariable("AWS_REGION", Configuration["AWS:Region"]);
+            //Environment.SetEnvironmentVariable("AWS_ACCESS_KEY_ID", Configuration["AWS:AccessKey"]);
+            //Environment.SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", Configuration["AWS: SecretKey"]);
+            //Environment.SetEnvironmentVariable("AWS_REGION", Configuration["AWS:Region"]);
 
             // Add S3 to the ASP.NET Core dependency injection framework.
             services.AddAWSService<Amazon.S3.IAmazonS3>();
