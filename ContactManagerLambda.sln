@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagerLambda", "ContactManagerLambda\ContactManagerLambda.csproj", "{1CD9A2D2-5F7C-4F73-8B5F-2595807C7BC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CD9A2D2-5F7C-4F73-8B5F-2595807C7BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD9A2D2-5F7C-4F73-8B5F-2595807C7BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD9A2D2-5F7C-4F73-8B5F-2595807C7BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD9A2D2-5F7C-4F73-8B5F-2595807C7BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C055C4C-E959-46FF-B4C0-5B462A58E667}
+	EndGlobalSection
+EndGlobal
