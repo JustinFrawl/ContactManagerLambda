@@ -201,7 +201,7 @@ namespace DynamoDB.libs.DynamoDb
             {
                 request.ExpressionAttributeNames.Add("#PT", "PhoneType");
                 request.ExpressionAttributeValues.Add(":newPhoneType", new AttributeValue { S = newPhoneType });
-                request.UpdateExpression = "SET #N = :newNum, #PT = :newPhoneType";
+                request.UpdateExpression = request.UpdateExpression + ", #PT = :newPhoneType";
             }
             return request;
 

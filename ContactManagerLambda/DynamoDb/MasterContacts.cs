@@ -186,7 +186,7 @@ namespace DynamoDB.libs.DynamoDb
             {
                 request.ExpressionAttributeNames.Add("#FN", "FirstName");
                 request.ExpressionAttributeValues.Add(":newFirstName", new AttributeValue { S = newFirstName });
-                request.UpdateExpression = "SET #P = :newEmail, #FN = :newFirstName";
+                request.UpdateExpression = request.UpdateExpression + ", #FN = :newFirstName";
             }
             return request;
 
