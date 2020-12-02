@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Amazon.DynamoDBv2;
 using System.Threading.Tasks;
-using DynamoDB.libs.DynamoDb;
+using ContactManagerLambda.DynamoDb;
 
 namespace ContactManagerLambda
 {

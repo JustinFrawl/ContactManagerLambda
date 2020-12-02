@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
-using DynamoDB.libs.DynamoDb;
-using DynamoDB.libs.Models;
+using ContactManagerLambda.DynamoDb;
+using ContactManagerLambda.Models;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using System.Threading.Tasks;
 using System.Linq;
 
 
-namespace DynamoDB.libs.DynamoDb
+namespace ContactManagerLambda.DynamoDb
 {
     public class MasterContacts : IMasterContacts
     {
@@ -59,7 +59,7 @@ namespace DynamoDB.libs.DynamoDb
         }
         #endregion
         #region R ead Logic
-        public async Task<DynamoDB.libs.Models.DynamoTableItems> getMasterContacts(int? Id)
+        public async Task<ContactManagerLambda.Models.DynamoTableItems> getMasterContacts(int? Id)
         {
             var queryRequest = GetRequestBuilder(Id);
 

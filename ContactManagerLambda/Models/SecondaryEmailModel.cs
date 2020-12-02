@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DynamoDB.libs.Models
+namespace ContactManagerLambda.Models
 {
     public class SecondaryEmailModel
     {

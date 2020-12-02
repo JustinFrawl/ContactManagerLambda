@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
-using DynamoDB.libs.Models;
+using ContactManagerLambda.Models;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using System.Threading.Tasks;
 using System.Linq;
 
 
-namespace DynamoDB.libs.DynamoDb
+namespace ContactManagerLambda.DynamoDb
 {
     public interface ISecondaryEmail
     {
         Task AddNewEntry(int id, int ContactId, string Email);
 
-        Task<DynamoDB.libs.Models.DynamoTableItems> getSecondaryEmails(int? Id);
+        Task<ContactManagerLambda.Models.DynamoTableItems> getSecondaryEmails(int? Id);
 
         Task<SecondaryEmailModel> Update(int Id, string Email);
 

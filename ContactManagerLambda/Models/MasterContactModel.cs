@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DynamoDB.libs.Models
+namespace ContactManagerLambda.Models
 {
     public class MasterContactModel
     {

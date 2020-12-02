@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
-using DynamoDB.libs.Models;
+using ContactManagerLambda.Models;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using System.Threading.Tasks;
 using System.Linq;
 
 
-namespace DynamoDB.libs.DynamoDb
+namespace ContactManagerLambda.DynamoDb
 {
 
     public class PhoneContact : IPhoneContact
@@ -52,7 +52,7 @@ namespace DynamoDB.libs.DynamoDb
         }
         #endregion
         #region R ead Logic
-        public async Task<DynamoDB.libs.Models.DynamoTableItems> getPhoneContacts(int? Id)
+        public async Task<ContactManagerLambda.Models.DynamoTableItems> getPhoneContacts(int? Id)
         {
             var queryRequest = GetRequestBuilder(Id, false);
 
