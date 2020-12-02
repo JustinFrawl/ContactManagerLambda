@@ -106,7 +106,7 @@ Secondary Email
 Things I could have done better:
 
 Most of the things I am not happy about were left in here as potential conversation pieces as well as the fact that I first created a simpler dynamodb database from a follow along youtube tutorial and much of the resulting structure you see here is mimicking that to an extent.
-I find there are three chief ways I learn to use new features in programming.  First, like everyone else I read documentation and watch tutorials online.  I will use a build along if I can even if I may not learn as much going through it.  This is because where I find my knowledge really grows
+I find there are three chief ways I learn to use new features in programming.  First, like everyone else I read documentation and watch tutorials online. Then I will use a build along if I can even if I may not learn as much going through it.  This is because where I find my knowledge really grows
 is when I hit refactoring.  With a tutorial having given me some sense in how to handle things, I generally feel more comfortable tinkering, breaking(thanks stack overflow), and ultimately improving the code.
 
 So things I see need for improvement and we can try and talk through some of them if you want.
