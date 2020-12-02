@@ -12,28 +12,19 @@ namespace ContactManagerLambda.Controllers
     [Route("api/DynamoDb")]
     public class DynamoDbController : Controller
     {
-        private readonly ICreateTable _createtable;
         private readonly IMasterContacts _MasterContacts;
         private readonly IPhoneContact _PhoneContacts;
         private readonly IAddressContact _AddressContacts;
         private readonly ISecondaryEmail _SecondaryEmail;
 
-        public DynamoDbController(ICreateTable createTable, IMasterContacts getMasterContacts, IPhoneContact phoneContacts, IAddressContact addressContacts, ISecondaryEmail secondaryEmail)
+        public DynamoDbController(IMasterContacts getMasterContacts, IPhoneContact phoneContacts, IAddressContact addressContacts, ISecondaryEmail secondaryEmail)
         {
-            _createtable = createTable;
             _MasterContacts = getMasterContacts;
             _PhoneContacts = phoneContacts;
             _AddressContacts = addressContacts;
             _SecondaryEmail = secondaryEmail;
         }
 
-        [Route("createtable")]
-        public IActionResult CreateDynamoDBTable()
-        {
-            _createtable.CreateDynamoDbTable();
-
-            return Ok();
-        }
         #region MasterContact
         [Route("addMasterContact")]
         public IActionResult PutMasterContact([FromQuery] int id, string Name, string PrimaryEmail)

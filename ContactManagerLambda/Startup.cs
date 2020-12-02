@@ -43,7 +43,6 @@ namespace ContactManagerLambda
             services.AddAWSService<Amazon.S3.IAmazonS3>();
             services.AddAWSService<IAmazonDynamoDB>();
 
-            services.AddSingleton<ICreateTable, CreateTable>();
             services.AddSingleton<IMasterContacts, MasterContacts>();
             services.AddSingleton<IPhoneContact, PhoneContact>();
             services.AddSingleton<IAddressContact, AddressContact>();
