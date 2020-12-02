@@ -78,6 +78,13 @@ namespace DynamoDB.libs.DynamoDb
 
         private AddressModel Map(Dictionary<string, AttributeValue> result)
         {
+            //string street2 = "";
+            //string city2 = "";
+            //string adrState2 = "";
+            //string Zip2 = "";
+            //This is an example of me trying to figure out how to best handle null values, use as a talking point and try to work it out on the phone to get across my thought process better?
+
+
             return new AddressModel
             {
                 Id = Convert.ToInt32(result["Id"].N),
